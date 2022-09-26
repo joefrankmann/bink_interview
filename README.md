@@ -1,2 +1,2 @@
 # bink_interview
-Repository for the coding test for Link
+Repository for the coding test for Bink
