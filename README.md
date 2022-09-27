@@ -1,4 +1,3 @@
-# bink_interview
 Repository for the coding test for Bink
 
 Script written in python 3.10
