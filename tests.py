@@ -50,18 +50,3 @@ class TestClass(unittest.TestCase):
 
     
 unittest.main()
-
-
-
-# squares = []
-# for i in range(10):
-#     squares.append(i**2)
-    
-# print(squares)
-
-# squares = [ i**2 for i in range(10)]
-
-# lst=[]
-# for substring in func:
-#     lst.append(int(substring[-2]))
-# lst=[int(substring[-2] for substring in func)]
