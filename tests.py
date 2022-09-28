@@ -9,9 +9,14 @@ class TestClass(unittest.TestCase):
         self.assertEqual(func[0], ['Property Name', 'Property Address [1]', 'Property  Address [2]', 'Property Address [3]', 'Property Address [4]', 'Unit Name', 'Tenant Name', 'Lease Start Date', 'Lease End Date', 'Lease Years', 'Current Rent'])
         self.assertTrue(func, list)
     
-    def test_current_rent(self):
+    def test_current_rent_is_in_ascending_order(self):
         func = current_rent()
-        self.assertTrue(func, list)
+        lst=[]
+        func.pop(0)
+        for substring in func:
+            lst.append(float(substring[-1]))
+        res = lst == sorted(lst)
+        self.assertTrue(res)
 
     def test_lease_years_list(self):
         func = lease_years_list()
