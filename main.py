@@ -31,7 +31,6 @@ def five_first_items():
     sorted_list = current_rent()
     return sorted_list[0:6]
 
-
 def lease_years_list():
     """List tenants with 25 years lease"""
     csv_list = csv_to_list(dataset)
@@ -44,7 +43,6 @@ def lease_years_list():
     lease_years_list.insert(0,header)
     return lease_years_list
 
-
 def total_rent():
     """Returns the total rent with 25 years lease"""
     lease_25_years = lease_years_list()[1:]
@@ -53,7 +51,6 @@ def total_rent():
         sublist[-1] = float(sublist[-1])
         total.append(sublist[-1])
     return sum(total)
-
 
 def dict_tenant_name_and_masts():
     """Dict: Tenants Names and amount of Masts"""
@@ -88,7 +85,6 @@ def dict_tenant_name_and_masts():
     final_results = dict(zip(keys_list, values_list))
     return final_results
 
-  
 def lease_start_date():
     """Lease Start Date btw 1/6/99-31/08/07"""
     csv_list = csv_to_list(dataset)
